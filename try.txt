@@ -1,0 +1,5 @@
+curl -si http://localhost:3000/products/1 | grep -i x-cache
+curl -si http://localhost:3000/products/1 | grep -i x-cache
+
+curl -s -o /dev/null -w "%{time_total}s\n" http://localhost:3000/products/2
+curl -s -o /dev/null -w "%{time_total}s\n" http://localhost:3000/products/2
